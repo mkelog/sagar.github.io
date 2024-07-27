@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-GB">
+
+  <head>
+  
+    <meta charset="utf-8" />
+    <title>My test page</title>
+	
+
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+	
+	<style>
+img {
+  display: block;
+  max-width:auto;
+  max-height:30vh;
+  width: auto;
+  height: auto;
+}
+
+	
+	</style>
+
+	
+	<script>
+	  document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '#splide',  {
+		  autoScroll:{
+			speed: 0.9,
+			pauseOnHover: boolean = false,
+			rewind: boolean = true,
+		  },
+				
+			type : "loop", 
+			pagination: boolean = false, 
+			drag : 'free',
+			wheel: boolean = true,
+			speed: number = 500,	
+			arrows: boolean = false,	
+			autoWidth:true,
+
+		}).mount(window.splide.Extensions);
+	  } );
+	  
+	  document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '#splide1',  {
+		  autoScroll:{
+			speed: -1.1,
+			pauseOnHover: boolean = false,
+			rewind: boolean = true,
+		  },
+				
+			type : "loop", 
+			perPage: 1, 
+			pagination: boolean = false, 
+			drag : 'free',
+			wheel: boolean = true,
+			speed: number = 500,	
+			arrows: boolean = false,	
+			direction:'rtl',
+
+		}).mount(window.splide.Extensions);
+
+	  } );
+
+	  document.addEventListener( 'DOMContentLoaded', function() {
+		var splideGrid = new Splide( '#splideGrid',  {
+		  autoScroll:{
+			speed: -1.1,
+			pauseOnHover: boolean = false,
+			rewind: boolean = true,
+		  },
+		    grid: {
+		rows: 2,
+		cols: 2,
+		gap : {
+			row: '0.5rem',
+			col: '0.5rem',
+		},	
+		},
+				
+			type : "loop", 
+			perPage: 1, 
+			pagination: boolean = false, 
+			drag : 'free',
+			wheel: boolean = true,
+			speed: number = 500,	
+			arrows: boolean = false,	
+			direction:'rtl',
+		
+		}).mount(window.splide.Extensions);
+
+	  } );	  
+
+
+
+	</script>	
+	
+
+	
+  </head>
+  
+  <body>
+  
+    <p id="123">This is my page</p>
+	
+	<div id="splide" class="splide" >
+	  <div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF7592.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF7620 2.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF7676.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF7950.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF7976.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8000.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8011.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8020.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8182.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8235.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8243.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8278.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8281.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8284.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8325.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/_DSF8371.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/000012340023.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF0365.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF3103.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF3111.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF3319.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF3343.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF4016.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF4502.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF5203.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img src="Media0.1/Portfolio/Digital/DSCF5241.jpg"/></div></li>								
+				
+			
+			
+			</ul>
+	  </div>
+	</div>
+	<div id="splide1" class="splide" >
+	  <div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide"><div style="height:30vh; background-color:purple;"> </div></li>
+				<li class="splide__slide"><div style="height:30vh; background-color:green;"> </div></li>
+				<li class="splide__slide"><div style="height:30vh; background-color:cyan;"> </div></li>
+			</ul>
+	  </div>
+	</div>	
+	<div id="splideGrid" class="splide" >
+	  <div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide"><div style="height:15vh; background-color:red;"> </div></li>
+				<li class="splide__slide"><div style="height:15vh; background-color:yellow;"> </div></li>
+				<li class="splide__slide"><div style="height:15vh; background-color:blue;"> </div></li>
+				<li class="splide__slide"><div style="height:15vh; background-color:orange;"> </div></li>				
+			</ul>
+	  </div>
+	</div>	
+
+	<p>This is my page</p>
+
+	
+
+	
+
+	
+
+
+	
+	
+  </body>
+
+	<script>
+
+/*let isMousedown = false;
+var direction = "";
+var elements = document.getElementsByClassName("splide");
+
+
+
+		splide1.addEventListener("mousedown", (e) => {
+
+		  isMousedown = true;
+		  console.log(isMousedown);
+    oldx = 0,
+    mousemovemethod = function (e) {
+    
+        if (e.pageX < oldx) {
+            direction = "left"
+        } else if (e.pageX > oldx) {
+            direction = "right"
+        }
+        
+        console.log(direction);
+        
+        oldx = e.pageX;
+        
+}
+document.addEventListener('mousemove', mousemovemethod);		  
+		splide1.addEventListener("mouseup", (e) => {
+		  if (isMousedown) {
+		
+			isMousedown = false;
+			console.log(isMousedown);
+		  }
+document.removeEventListener('mousemove', mousemovemethod);		  
+		});
+		});		*/
+
+
+
+
+
+
+	</script>
+
+</html>
