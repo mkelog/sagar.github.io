@@ -19,7 +19,7 @@ img {
   max-width:auto;
   max-height:30vh;
   width: auto;
-  height: auto;
+  height: 30vh;
 }
 .easeload{
     opacity: 0;
@@ -28,6 +28,18 @@ img {
     -ms-transition: all 2s ease; 
     -o-transition: all 2s ease; 
 }
+body{
+	background-image: url("./Media0.1/Portfolio/Film/IMG6749.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;	
+}
+.splide{
+	padding:100px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
 	
 	</style>
 
@@ -61,12 +73,12 @@ img {
 		  },
 				
 			type : "loop", 
-			perPage: 1, 
 			pagination: boolean = false, 
 			drag : 'free',
 			wheel: boolean = true,
 			speed: number = 500,	
 			arrows: boolean = false,	
+			autoWidth:true,
 			direction:'rtl',
 
 		}).mount(window.splide.Extensions);
@@ -83,10 +95,7 @@ img {
 		    grid: {
 		rows: 2,
 		cols: 2,
-		gap : {
-			row: '0.5rem',
-			col: '0.5rem',
-		},	
+
 		},
 				
 			type : "loop", 
@@ -112,37 +121,58 @@ img {
   
   <body>
   
-    <p id="123">This is my page</p>
 	
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7592.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF76202.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7676.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7950.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7976.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8000.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8011.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8020.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8182.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8235.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8243.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8278.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8281.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8284.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8325.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8371.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/000012340023.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF0365.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF1010.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF1018.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF1270.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF1287.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3089.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3103.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3111.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3234.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3319.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF3343.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4016.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4025.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4116.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4149.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4345.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4502.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5203.jpg"/></div></li>				
-				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5241.jpg"/></div></li>								
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4560.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4703.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4708.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4709.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF4760.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5146.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5165.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5282.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5347.jpg"/></div></li>	
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5893.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF7138.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF7291.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF8981.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF9109.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF3925.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7322.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7592.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7620.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7712.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7809.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7851.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7910.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7950.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF7973.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8169.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8184.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8195.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8235.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8281.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8284.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8287.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8371.jpg"/></div></li>					
 				
 			
 			
@@ -152,9 +182,96 @@ img {
 	<div id="splide1" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">
-				<li class="splide__slide"><div style="height:30vh; background-color:purple;"> </div></li>
-				<li class="splide__slide"><div style="height:30vh; background-color:green;"> </div></li>
-				<li class="splide__slide"><div style="height:30vh; background-color:cyan;"> </div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000012290017.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000012340002.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/0000123400072.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000012340009.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000012350011.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000036750021.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000036790004.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/0000367900072.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000036790007.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000036790008.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/000036790016.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/09390004.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/1.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/12770005.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/12800021.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/12800024.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/20060007.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/2057E0012.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/20700023.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/350800122.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/35090012.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/35090016.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/40990011.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/41050024.jpg"/></div></li>	
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/53850018.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/53850035.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/61260010.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/61270002.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/61270016.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/646200272copy.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/646200272.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/66860004.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/66880008.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/70400005.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/72340008.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/74530009.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/77850028.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/7785E0015.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/77880008.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/77880015.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/77910034.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/89610012.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/89610014.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/89610020.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/92960019.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/94660003.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/CNV00012.jpg"/></div></li>					
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/CNV00022.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/CNV00030.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/copy.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/ECC3F43197BE4AE69B8A5F133A43BA23.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG1438.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG1439.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG1443.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG1451.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG2682.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG3695.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG3903.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG5592.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG6749.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/IMG8362.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/Nepal26.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/Nepal4622.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/Nepal5.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/Nepal63.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/Nepal.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024400001.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024410006.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024410009.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024430024.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024440030.jpg"/></div></li>	
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024440031.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024440033.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024450004.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024450018.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10244700052.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245100082.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245300132.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245300182.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245300312.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245400022.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245400132.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R10245500232.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570020.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570021.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570022.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570024.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570027.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570028.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Film/R1024570029.jpg"/></div></li>
 			</ul>
 	  </div>
 	</div>	
@@ -169,7 +286,7 @@ img {
 	  </div>
 	</div>	
 
-	<p>This is my page</p>
+
 
 	
 
