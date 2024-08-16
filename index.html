@@ -118,7 +118,25 @@ body{
 
 		}).mount(window.splide.Extensions);
 	  } );
-	  
+	  document.addEventListener( 'DOMContentLoaded', function() {
+		var splide = new Splide( '#splide3',  {
+		  autoScroll:{
+			speed: -0.8,
+			pauseOnHover: boolean = false,
+			rewind: boolean = true,
+		  },
+			type : "loop", 
+			pagination: boolean = false, 
+			drag : 'free',
+			wheel: boolean = true,
+			speed: number = 500,	
+			arrows: boolean = false,	
+			autoWidth:true,
+			direction:'rtl',
+
+		}).mount(window.splide.Extensions);
+
+	  } );		  
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide = new Splide( '#splide1',  {
 		  autoScroll:{
@@ -160,25 +178,7 @@ body{
 
 	  } );	  
 
-	  document.addEventListener( 'DOMContentLoaded', function() {
-		var splide = new Splide( '#splide3',  {
-		  autoScroll:{
-			speed: -0.8,
-			pauseOnHover: boolean = false,
-			rewind: boolean = true,
-		  },
-			type : "loop", 
-			pagination: boolean = false, 
-			drag : 'free',
-			wheel: boolean = true,
-			speed: number = 500,	
-			arrows: boolean = false,	
-			autoWidth:true,
-			direction:'rtl',
 
-		}).mount(window.splide.Extensions);
-
-	  } );	
 
 
 	</script>	
