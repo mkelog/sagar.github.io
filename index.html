@@ -12,7 +12,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	
 	<style>
 	
@@ -43,7 +42,7 @@ body{
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:  auto 100%;	
-	overflow: hidden;
+	overflow-x: hidden;
   -webkit-animation-name: background;
   -webkit-animation-duration: 20s;
   -webkit-animation-direction: alternate;  
@@ -273,7 +272,7 @@ button, input[type="submit"], input[type="reset"] {
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">			
-				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover1"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5347.jpg"/></button></div></li>	
+				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5347.jpg"/></button></div></li>	
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover2"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF5893.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover3"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF7138.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover4"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSCF7291.jpg"/></button></div></li>
@@ -297,7 +296,7 @@ button, input[type="submit"], input[type="reset"] {
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover22"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8284.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover23"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8287.jpg"/></button></div></li>				
 				<li class="splide__slide" style="width:auto;"><div ><button popovertarget="mypopover24"><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./Media0.1/Portfolio/Digital/DSF8371.jpg"/></button></div></li>	
-				<div id="mypopover1" popover><img style="height:90vh;" id="nested" src="./Media0.1/Portfolio/Digital/DSCF5347.jpg"/></div>				
+				<div id="mypopover"  popover><img  style="height:90vh;" id="nested" src="./Media0.1/Portfolio/Digital/DSCF5347.jpg"/></div>				
 				<div id="mypopover2" popover><img style="height:90vh;" id="nested" src="./Media0.1/Portfolio/Digital/DSCF5893.jpg"/></div>	
 				<div id="mypopover3" popover><img style="height:90vh;" id="nested" src="./Media0.1/Portfolio/Digital/DSCF7138.jpg"/></div>	
 				<div id="mypopover4" popover><img style="height:90vh;" id="nested" src="./Media0.1/Portfolio/Digital/DSCF7291.jpg"/></div>	
@@ -474,7 +473,15 @@ button, input[type="submit"], input[type="reset"] {
 	
 
 
-	
+<script>
+const popover = document.getElementById("mypopover");
+
+document.addEventListener("click", (event) => {
+  if (event) {
+    popover.hidePopover();
+  }
+});
+</script>	
 	
   </body>
 
