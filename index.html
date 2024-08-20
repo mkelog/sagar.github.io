@@ -28,6 +28,7 @@ img {
 
 
 }
+
 .easeload{
     opacity: 0;
     -webkit-transition: all 2s ease; 
@@ -39,11 +40,24 @@ img {
 body{
 	height:100vh;
 	width:100%;
-	background-image: url("./Media0.1/Portfolio/Film/IMG6749.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
-	background-size:  auto 100vh;	
-  
+	background-size:  auto 100%;	
+	overflow: hidden;
+  -webkit-animation-name: background;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-direction: alternate;  
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;	
+}
+@-webkit-keyframes background {
+  0% {
+    background-image: url("./Media0.1/Portfolio/Film/09390004.jpg");
+  }
+
+  100% {
+    background-image: url("./Media0.1/Portfolio/Film/IMG6749.jpg");
+  }
 }
 @media only screen and (max-width: 992px) {
     body { 
@@ -253,7 +267,7 @@ button, input[type="submit"], input[type="reset"] {
 	
   </head>
   
-  <body>
+  <body >
 
 
 	<div id="splide" class="splide" >
