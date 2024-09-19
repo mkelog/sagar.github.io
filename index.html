@@ -81,47 +81,24 @@ body{
 
 
 
-[popover]:popover-open {
-  opacity: 1;
-  border:0px;
-  margin:0px;
-  padding:0px;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
- transition:
-    opacity 0.7s,
-    transform 0.7s,
-    overlay 0.7s allow-discrete,
-    display 0.7s allow-discrete;
-}
-
 [popover] {
-  border:0px;
-  margin:0px;
-  padding:0px;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  transition: opacity 1s, display 1s allow-discrete;
 
-  /* Final state of the exit animation */
   opacity: 0;
-  transition:
-    opacity 0.7s,
-    overlay 0.7s allow-discrete,
-    display 0.7s allow-discrete;
-  /* Equivalent to
-  transition: all 0.7s allow-discrete; */
-}
+  border:0px;
 
-/* Needs to be after the previous [popover]:popover-open rule
-to take effect, as the specificity is the same */
-@starting-style {
-  [popover]:popover-open {
-    opacity: 0;
+  padding:0px;
 
+  &:popover-open {
+    opacity: 1;
+
+
+    @starting-style {
+      & {
+        opacity: 0;
+
+      }
+    }
   }
 }
 
