@@ -147,6 +147,104 @@ enlarge{
 	transition:opacity 3s;
 }
 	
+	
+	
+	.fadein{
+		height:100%;
+		width:100%;
+		background-color:black;
+		z-index:-5;
+		position:absolute;
+	}
+.fadein img {
+	
+	min-height:100%;
+	min-width:100%;
+	
+
+    bottom: 0;
+
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+
+
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 104s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+
+}
+#f2 {
+    -webkit-animation-delay: -96s;
+
+}
+#f3 {
+    -webkit-animation-delay: -88s;
+
+}
+#f4 {
+    -webkit-animation-delay: -80s;
+}
+#f5 {
+    -webkit-animation-delay: -72s;
+
+}
+#f6 {
+    -webkit-animation-delay: -64s;
+
+}
+#f7 {
+    -webkit-animation-delay: -56s;
+}
+#f8 {
+    -webkit-animation-delay: -48s;
+
+}
+#f9 {
+    -webkit-animation-delay: -40s;
+
+}
+#f10 {
+    -webkit-animation-delay: -32s;
+}
+#f11 {
+    -webkit-animation-delay: -24s;
+
+}
+#f12 {
+    -webkit-animation-delay: -16s;
+
+}
+#f13 {
+    -webkit-animation-delay: -8s;
+
+}
+	
+	
 	</style>
 
 	
@@ -156,7 +254,7 @@ enlarge{
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide = new Splide( '#splide',  {
 		  autoScroll:{
-			speed: 0.8,
+			speed: 0.4,
 			pauseOnHover: boolean = false,
 			rewind: boolean = true,
 		  },
@@ -175,7 +273,7 @@ enlarge{
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide3 = new Splide( '#splide3',  {
 		  autoScroll:{
-			speed: 0.8,
+			speed: 0.4,
 			pauseOnHover: boolean = false,
 			rewind: boolean = true,
 		  },
@@ -196,7 +294,7 @@ enlarge{
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide4 = new Splide( '#splide4',  {
 		  autoScroll:{
-			speed: 1.0,
+			speed: 0.6,
 			pauseOnHover: boolean = false,
 
 		  },
@@ -214,7 +312,7 @@ enlarge{
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide2 = new Splide( '#splide2',  {
 		  autoScroll:{
-			speed: 0.8,
+			speed: 0.4,
 			pauseOnHover: boolean = false,
 		  },
 				
@@ -232,6 +330,9 @@ enlarge{
 
 
 
+
+
+
 	</script>	
 	
 
@@ -239,7 +340,76 @@ enlarge{
   </head>
   
   <body >
+<div class="fadein">
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/1.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/1.jpg" />
+  <img id="f1" src="./Media0.1/Portfolio/Film/09390004.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/2.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/2.jpg" />
+  <img id="f2" src="./Media0.1/Portfolio/Film/CNV00030.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/M/3.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/3.jpg" />
+  <img id="f3" src="./Media0.1/Portfolio/Film/IMG6749.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/4.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/4.jpg" />
+  <img id="f4" src="./Media0.1/Portfolio/Film/09390004.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/5.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/5.jpg" />
+  <img id="f5" src="./Media0.1/Portfolio/Film/CNV00030.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/6.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/6.jpg" />
+  <img id="f6" src="./Media0.1/Portfolio/Film/IMG6749.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/7.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/7.jpg" />
+  <img id="f7" src="./Media0.1/Portfolio/Film/09390004.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/8.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/8.jpg" />
+  <img id="f8" src="./Media0.1/Portfolio/Film/CNV00030.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/9.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/9.jpg" />
+  <img id="f9" src="./Media0.1/Portfolio/Film/IMG6749.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/10.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/10.jpg" />
+  <img id="f10" src="./Media0.1/Portfolio/Film/09390004.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/11.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/11.jpg" />
+  <img id="f11" src="./Media0.1/Portfolio/Film/CNV00030.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/12.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/12.jpg" />
+  <img id="f12" src="./Media0.1/Portfolio/Film/IMG6749.jpg"  />
+</picture>
+<picture>
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/13.jpg" />
+  <source media="(min-width: 800px)" srcset="./CPRESS/13.jpg" />
+  <img id="f13" src="./Media0.1/Portfolio/Film/IMG6749.jpg"  />
+</picture>
 
+	
+
+</div>
 
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
