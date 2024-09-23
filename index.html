@@ -209,13 +209,9 @@ enlarge{
     -webkit-animation-delay: -8s;
 
 }
-	
-#enlargeDiv::-webkit-scrollbar {
-  display: none;
-}
 
-	
-	
+/* Portrait orientation */
+@media screen and (orientation: portrait) {
 #enlargeDiv{
     overflow: scroll;
     display: none;
@@ -227,17 +223,18 @@ enlarge{
     z-index: 1000;
     height: 80vh;
     width: 90vw;
+
 }
 #enlargeDiv img{	
 position: absolute;
-    top: 50%;
-    left: 50%;
+
+
+ 
     height: 80vh;
     transition: opacity 500ms;
     width: auto;
     max-height: max-content;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+
 
 }
 
@@ -246,6 +243,49 @@ position: absolute;
 
 
 }
+}
+/* Landscape orientation */
+@media screen and (orientation: landscape) {
+#enlargeDiv{
+    overflow: scroll;
+scroll-padding-left: 200em;	
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    height: 80vh;
+    width: 90vw;
+scroll-snap-align: center;	
+}
+#enlargeDiv img{	
+position: absolute;
+
+    height: 80vh;
+    transition: opacity 500ms;
+    width: auto;
+    max-height: max-content;
+
+
+}
+
+#enlargeImg{
+	transition: opacity 500ms;
+
+
+}
+}
+
+	
+#enlargeDiv::-webkit-scrollbar {
+  display: none;
+}
+
+	
+	
+
 
 @keyframes fade-out {
   0% {
@@ -385,7 +425,7 @@ function openDiv(id)
 			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
 			document.getElementById('enlargeImg').src=id;
-	
+
 			divOpened=1;	
 			
 	}else if(divOpened ==1)
@@ -435,7 +475,7 @@ function openDiv(id)
   <img loading="lazy" id="f2" src="./CPRESS/2.jpg"loading="lazy" fetchpriority="high"  />
 </picture>
 <picture>
-  <source media="(max-width: 799px)" srcset="./CPRESS/M/M/3.jpg" />
+  <source media="(max-width: 799px)" srcset="./CPRESS/M/3.jpg" />
   <source media="(min-width: 800px)" srcset="./CPRESS/3.jpg" />
   <img loading="lazy" id="f3" src="./CPRESS/3.jpg"loading="lazy" fetchpriority="high"  />
 </picture>
