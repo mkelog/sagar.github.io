@@ -216,6 +216,8 @@ enlarge{
 	display:none;
 	position:absolute;
 	z-index:1000;
+	height:100%;
+	width:100%;
 
 }
 #enlargeDiv img{	
@@ -401,7 +403,7 @@ enlarge{
 	
 
 </div>
-<div id="enlargeDiv"   ><img onclick="openDiv(this.src)" id ="enlargeImg"  onload="this.style.opacity=1" loading="lazy" style="height:90vh;"  src="./SmallMedia/Row1/11000.jpg"/></div>				
+<div id="enlargeDiv" onclick="openDiv(this.src)"   ><img onclick="openDiv(this.src)" id ="enlargeImg"  loading="lazy" style="height:90vh;"  src="./SmallMedia/Row1/11000.jpg"/></div>				
 
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
@@ -631,26 +633,26 @@ function openDiv(id)
 	{
 			document.getElementById('enlargeDiv').style.display="block";
 			document.getElementById('enlargeImg').style.animation="fade-in 1s forwards";
-
 			document.getElementById('enlargeImg').src=id;
-
 	
-				divOpened=1;
-				
+			divOpened=1;	
 			
 	}else if(divOpened ==1)
 	{		
 			
-
-			document.getElementById('enlargeImg').style.animation="fade-out 1000ms forwards";
+		
+		document.getElementById('enlargeImg').style.animation="fade-out 1000ms forwards";
 					
-			const animated = document.querySelector("div #enlargeImg");
+		const animated = document.querySelector("div #enlargeImg");
 			
-animated.addEventListener('animationend', function(e){
-    if(e.animationName === 'fade-out'){
-       document.getElementById('enlargeDiv').style.display="none";
-    }
-});			
+	animated.addEventListener('animationend', function(e){
+	
+		if(e.animationName === 'fade-out'){
+		
+		document.getElementById('enlargeDiv').style.display="none";
+		
+		}
+	});			
 
 			
 
@@ -661,15 +663,7 @@ animated.addEventListener('animationend', function(e){
 
 
 
-function HidePopover1(id){
-const popover1 = document.getElementById(id);
-console.log(id);
-document.addEventListener("click", (event) => {
-  if (event) {
-    popover1.hidePopover();
-  }
-});
-}
+
 </script>	
 	
   </body>
