@@ -22,7 +22,10 @@ img {
   max-width:auto;
   max-height:30vh;
   width: auto;
-	
+
+
+ 
+
 
 
 
@@ -212,6 +215,8 @@ enlarge{
 
 /* Portrait orientation */
 @media screen and (orientation: portrait) {
+
+
 #enlargeDiv{
     overflow: scroll;
     display: none;
@@ -234,7 +239,11 @@ position: absolute;
     transition: opacity 500ms;
     width: auto;
     max-height: 100%;
-
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
 }
 
@@ -267,7 +276,11 @@ position: absolute;
     transition: opacity 500ms;
     width: auto;
     max-height: 100%;
-
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
 }
 
@@ -528,7 +541,7 @@ function openDiv(id)
 
 </div>
 		
-<div id="enlargeDiv" onclick="closeDiv()"   ><img  id ="enlargeImg"  loading="lazy"  src="./SmallMedia/Row1/11000.jpg"/></div>	
+<div id="enlargeDiv" onclick="closeDiv()"   ><div id = "wrapper"><img  id ="enlargeImg"  loading="lazy"  src="./SmallMedia/Row1/11000.jpg"/></div></div>	
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">			
