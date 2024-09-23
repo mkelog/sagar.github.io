@@ -438,9 +438,13 @@ function openDiv(id)
 			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
 			document.getElementById('enlargeImg').src=id;
-			widthImg = document.getElementById('enlargeImg').offsetWidth;
-			console.log(widthImg);
-			document.getElementById("enlargeDiv").scrollLeft += widthImg;			
+			
+			let scrollElement = document.querySelector('#enlargeDiv');
+			scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
+			
+		//	widthImg = document.getElementById('enlargeDiv').offsetWidth/2;
+			//console.log(widthImg);
+			//document.getElementById("enlargeDiv").scrollLeft += widthImg;			
 
 			divOpened=1;	
 			
