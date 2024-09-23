@@ -33,7 +33,7 @@ img {
 body{
 	height:100vh;
 	width:100%;
-
+position: relative;
 }
 
 .easeload{
@@ -213,15 +213,18 @@ enlarge{
 	
 	
 #enlargeDiv{
-	display:none;
-	position:absolute;
-	z-index:1000;
-	height:90vh;
-	width:90vw;
-
+  display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+	  z-index:1000;
 }
 #enlargeDiv img{	
-	
+
+
+
 }
 
 #enlargeImg{
@@ -247,11 +250,7 @@ enlarge{
   
   }	
 
-#enlargeDiv img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+
 	
 	</style>
 
@@ -409,8 +408,8 @@ enlarge{
 	
 
 </div>
-<div id="enlargeDiv" onclick="closeDiv()"   ><img  id ="enlargeImg"  loading="lazy" style="height:90vh;"  src="./SmallMedia/Row1/11000.jpg"/></div>				
-
+		
+<div id="enlargeDiv" onclick="closeDiv()"   ><img  id ="enlargeImg"  loading="lazy"  src="./SmallMedia/Row1/11000.jpg"/></div>	
 	<div id="splide" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">			
@@ -611,6 +610,7 @@ enlarge{
 				<li class="splide__slide" ><div ><img class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row4/61500.jpg"/></div></li>			
 			</ul>
 	  </div>
+		  
 	</div>	
 	
 
@@ -660,7 +660,21 @@ function openDiv(id)
 
 	if (divOpened == 0)
 	{
-			document.getElementById('enlargeDiv').style.display="block";
+	            var orientation,
+            img = new Image();
+            img.src = id;
+			
+			if (img.naturalWidth > img.naturalHeight) {
+                orientation = 'landscape';
+				document.getElementById('enlargeImg').style.height='auto';
+				document.getElementById('enlargeImg').style.width='90vw';
+            } else if (img.naturalWidth < img.naturalHeight) {
+                orientation = 'portrait';
+				document.getElementById('enlargeImg').style.height='90vh';
+				document.getElementById('enlargeImg').style.width='auto';
+            } 
+			
+			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
 			document.getElementById('enlargeImg').src=id;
 	
