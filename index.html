@@ -420,11 +420,14 @@ function openDiv(id)
 
 	if (divOpened == 0)
 	{
-	      
+			var widthImg = 0;
 			
 			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
 			document.getElementById('enlargeImg').src=id;
+			widthImg = document.getElementById('enlargeImg').offsetWidth/3;
+			console.log(widthImg);
+			document.getElementById("enlargeDiv").scrollLeft += widthImg;			
 
 			divOpened=1;	
 			
