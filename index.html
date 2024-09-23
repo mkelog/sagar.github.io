@@ -210,30 +210,41 @@ enlarge{
 
 }
 	
+#enlargeDiv::-webkit-scrollbar {
+  display: none;
+}
+
 	
 	
 #enlargeDiv{
-  display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-	  z-index:1000;
-	  height:90vh;
-	  width:90vw;
+    overflow: scroll;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    height: 80vh;
+    width: 90vw;
 }
 #enlargeDiv img{	
-object-fit: cover;
-height:100%;
-width:100%;
-
+position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80vh;
+    transition: opacity 500ms;
+    width: auto;
+    max-height: max-content;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 
 }
 
 #enlargeImg{
 	transition: opacity 500ms;
-		max-height:100vh;
+
+
 }
 
 @keyframes fade-out {
@@ -338,7 +349,68 @@ width:100%;
 		}).mount(window.splide.Extensions);
 	  } );
 
+var divOpened = 0;
 
+function closeDiv(){
+if(divOpened ==1)
+	{		
+			
+		
+		document.getElementById('enlargeImg').style.animation="fade-out 500ms forwards";
+					
+		const animated = document.querySelector("div #enlargeImg");
+			
+	animated.addEventListener('animationend', function(e){
+	
+		if(e.animationName === 'fade-out'){
+		
+		document.getElementById('enlargeDiv').style.display="none";
+		
+		}
+	});			
+
+			
+
+			divOpened = 0;		
+	}
+}
+function openDiv(id)
+{
+	
+
+	if (divOpened == 0)
+	{
+	      
+			
+			document.getElementById('enlargeDiv').style.display="flex";
+			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
+			document.getElementById('enlargeImg').src=id;
+	
+			divOpened=1;	
+			
+	}else if(divOpened ==1)
+	{		
+			
+		
+		document.getElementById('enlargeImg').style.animation="fade-out 500ms forwards";
+					
+		const animated = document.querySelector("div #enlargeImg");
+			
+	animated.addEventListener('animationend', function(e){
+	
+		if(e.animationName === 'fade-out'){
+		
+		document.getElementById('enlargeDiv').style.display="none";
+		
+		}
+	});			
+
+			
+
+			divOpened = 0;		
+	}
+
+}
 
 
 
@@ -632,68 +704,7 @@ width:100%;
 
 <script>
 
-var divOpened = 0;
 
-function closeDiv(){
-if(divOpened ==1)
-	{		
-			
-		
-		document.getElementById('enlargeImg').style.animation="fade-out 500ms forwards";
-					
-		const animated = document.querySelector("div #enlargeImg");
-			
-	animated.addEventListener('animationend', function(e){
-	
-		if(e.animationName === 'fade-out'){
-		
-		document.getElementById('enlargeDiv').style.display="none";
-		
-		}
-	});			
-
-			
-
-			divOpened = 0;		
-	}
-}
-function openDiv(id)
-{
-	
-
-	if (divOpened == 0)
-	{
-	      
-			
-			document.getElementById('enlargeDiv').style.display="flex";
-			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
-			document.getElementById('enlargeImg').src=id;
-	
-			divOpened=1;	
-			
-	}else if(divOpened ==1)
-	{		
-			
-		
-		document.getElementById('enlargeImg').style.animation="fade-out 500ms forwards";
-					
-		const animated = document.querySelector("div #enlargeImg");
-			
-	animated.addEventListener('animationend', function(e){
-	
-		if(e.animationName === 'fade-out'){
-		
-		document.getElementById('enlargeDiv').style.display="none";
-		
-		}
-	});			
-
-			
-
-			divOpened = 0;		
-	}
-
-}
 
 
 
