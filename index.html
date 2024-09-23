@@ -233,7 +233,7 @@ position: absolute;
     height: 80vh;
     transition: opacity 500ms;
     width: auto;
-    max-height: max-content;
+    max-height: 100%;
 
 
 }
@@ -266,7 +266,7 @@ position: absolute;
     height: 80vh;
     transition: opacity 500ms;
     width: auto;
-    max-height: max-content;
+    max-height: 100%;
 
 
 }
@@ -425,7 +425,7 @@ function openDiv(id)
 			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
 			document.getElementById('enlargeImg').src=id;
-			widthImg = document.getElementById('enlargeImg').offsetWidth/3;
+			widthImg = document.getElementById('enlargeImg').offsetWidth;
 			console.log(widthImg);
 			document.getElementById("enlargeDiv").scrollLeft += widthImg;			
 
