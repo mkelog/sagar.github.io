@@ -17,28 +17,22 @@
 	<style>
 	
 
-	
-img {
-  display: block;
-  max-width:auto;
-  max-height:30vh;
-  width: auto;
-
-
- 
-
-
-
-
-}
 
 
 
 body{
 overflow:hidden;
-	height:100lvh;
+	height:100dvh;
 	width:100%;
 position: relative;
+
+}
+
+img {
+  display: block;
+  max-width:auto;
+  max-height:30vh;
+  width: auto;
 
 }
 
@@ -104,42 +98,29 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 	transition: backdrop-filter 5s;	
 }
-#nested{
-	max-height:100vh;
-}
-#nested img{
-	height:100vh;
 
-}
-enlarge{
-	opacity:0;
-	transition:opacity 3s;
-}
-	
-	
-	
-	.fadein{
-		height:100%;
-		width:100%;
 
-		z-index:-5;
-		position:absolute;
-	}
+	
+	
+	
+.fadein{
+	height:100%;
+	width:100%;
+	z-index:-5;
+	position:absolute;
+}
+
 .fadein img {
 	
 	min-height:100%;
 	min-width:100%;
-	
-
     bottom: 0;
-
     margin: auto;
     overflow: auto;
     position: fixed;
     right: 0;
     top: 0;
     object-fit: cover;
-
 
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
@@ -219,79 +200,78 @@ enlarge{
 /* Portrait orientation */
 @media screen and (orientation: portrait) {
 
+	#enlargeDiv{
+		overflow: scroll;
+		display: none;
+		position: absolute;
+		
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		
+		z-index: 1000;
+		height: 80vh;
+		width: 90vw;
 
-#enlargeDiv{
-    overflow: scroll;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    height: 80vh;
-    width: 90vw;
-
-}
-#enlargeDiv img{	
-position: absolute;
-
-
- 
-    height: 80vh;
-    transition: opacity 500ms;
-    width: auto;
-    max-height: 100%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-}
-
-#enlargeImg{
-	transition: opacity 500ms;
-
+	}
+	#enlargeDiv img{	
+		position: absolute;
+		height: 80vh;
+		transition: opacity 500ms;
+		width: auto;
+		max-height: 100%;
+		
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
 }
+
+	#enlargeImg{
+		transition: opacity 500ms;
+
+	}
 }
 /* Landscape orientation */
 @media screen and (orientation: landscape) {
-#enlargeDiv{
-    overflow: scroll;
-scroll-padding-left: 200em;	
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    height: 80vh;
-    width: 90vw;
-scroll-snap-align: center;	
-}
-#enlargeDiv img{	
-position: absolute;
+	#enlargeDiv{
+		overflow: scroll;
+		scroll-padding-left: 200em;	
+		display: none;
+		position: absolute;
+		
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		
+		z-index: 1000;
+		height: 80vh;
+		width: 90vw;
+		scroll-snap-align: center;	
+	}
+	#enlargeDiv img{	
+		position: absolute;
+		height: 80vh;
+		transition: opacity 500ms;
+		width: auto;
+		max-height: 100%;
+		
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
-    height: 80vh;
-    transition: opacity 500ms;
-    width: auto;
-    max-height: 100%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+	}
 
-}
+	#enlargeImg{
+		transition: opacity 500ms;
 
-#enlargeImg{
-	transition: opacity 500ms;
-
-
-}
+	}
 }
 
 	
@@ -311,7 +291,8 @@ position: absolute;
     opacity: 0;
   }
   
-  }
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -319,7 +300,7 @@ position: absolute;
     opacity: 1;
   }
   
-  }	
+}	
 
 
 	
