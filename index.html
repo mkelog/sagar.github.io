@@ -241,10 +241,10 @@ img {
 	}
 	#enlargeDiv img{	
 		position: absolute;
-		height: 80vh;
+		height: auto;
 		transition: opacity 500ms;
-		width: auto;
-		max-height: 100%;
+		width: 100%;
+		max-height: none;
 		
 		margin: auto;
 
@@ -399,7 +399,45 @@ if(divOpened ==1)
 }
 function openDiv(id)
 {
-	
+	        var orientation,
+            img = new Image();
+            img.src = id;
+			
+window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+    const portrait = e.matches;
+
+    if (portrait) {
+             if (img.naturalWidth > img.naturalHeight) {
+			
+                orientation = 'landscape';
+				document.getElementById('enlargeImg').style.height="100%";
+				document.getElementById('enlargeImg').style.width="auto";
+            } else if (img.naturalWidth < img.naturalHeight) {
+                orientation = 'portrait';
+				document.getElementById('enlargeImg').style.height="100%";
+				document.getElementById('enlargeImg').style.width="auto";				
+            } else {
+                orientation = 'even';
+            }
+			console.log(orientation);       // do something
+    } else {
+            if (img.naturalWidth > img.naturalHeight) {
+			
+                orientation = 'landscape';
+				document.getElementById('enlargeImg').style.height="auto";
+				document.getElementById('enlargeImg').style.width="100%";
+            } else if (img.naturalWidth < img.naturalHeight) {
+                orientation = 'portrait';
+				document.getElementById('enlargeImg').style.height="auto";
+				document.getElementById('enlargeImg').style.width="100%";				
+            } else {
+                orientation = 'even';
+            }
+			console.log(orientation);
+    }
+});
+
+
 
 	if (divOpened == 0)
 	{
