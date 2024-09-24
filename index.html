@@ -23,7 +23,7 @@
 body{
 margin:0;
 overflow:hidden;
-	height:-webkit-fill-available;;
+	height:100svh;
 	width:100%;
 position: relative;
 
@@ -94,7 +94,7 @@ img {
 	
 	
 .fadein{
-	height:-webkit-fill-available;;
+	height:-webkit-fill-available;
 	width:100%;
 	z-index:-5;
 	position:absolute;
@@ -340,7 +340,7 @@ img {
 		  autoScroll:{
 			speed: 0.6,
 			pauseOnHover: boolean = false,
-autoStart: boolean = true,
+			autoStart: boolean = true,
 		  },
 				
 			type : "loop", 
@@ -397,6 +397,7 @@ if(divOpened ==1)
 			divOpened = 0;		
 	}
 }
+
 function openDiv(id)
 {
 	        var orientation,
@@ -426,10 +427,12 @@ window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
                 orientation = 'landscape';
 				document.getElementById('enlargeImg').style.height="auto";
 				document.getElementById('enlargeImg').style.width="100%";
+
             } else if (img.naturalWidth < img.naturalHeight) {
                 orientation = 'portrait';
 				document.getElementById('enlargeImg').style.height="auto";
-				document.getElementById('enlargeImg').style.width="100%";				
+				document.getElementById('enlargeImg').style.width="100%";	
+
             } else {
                 orientation = 'even';
             }
