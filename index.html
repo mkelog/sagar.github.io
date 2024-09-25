@@ -4,14 +4,14 @@
   <head>
   
     <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta property="og:title" content="Sagar Gurung"/>
-<meta property="og:image" content="https://mkelog.github.io/sagar.github.io/500px/Row1/15500.jpg"/>
-<meta property="og:description" content="Photography Film Digital"/>
-<meta property="og:url" content="https://mkelog.github.io/sagar.github.io/"/>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="627"/>
-<meta property="og:type" content="website"/> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta property="og:title" content="Sagar Gurung"/>
+	<meta property="og:image" content="https://mkelog.github.io/sagar.github.io/500px/Row1/15500.jpg"/>
+	<meta property="og:description" content="Photography Film Digital"/>
+	<meta property="og:url" content="https://mkelog.github.io/sagar.github.io/"/>
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="627"/>
+	<meta property="og:type" content="website"/> 	
     <title>Sagar Gurung Portfolio</title>
 	
 
@@ -22,284 +22,229 @@
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
 	
 	<style>
-	
-
-
-
-
-body{
-margin:0;
-overflow:hidden;
-
-
-}
-
-img {
-  display: block;
-  max-width:auto;
-  max-height:30svh;
-  width: auto;
-
-}
-
-.easeload{
-    opacity: 0;
-    -webkit-transition: all 2s ease; 
-    -moz-transition: all 2s ease; 
-    -ms-transition: all 2s ease; 
-    -o-transition: all 2s ease; 
-}
-
-
-#splide{
-	padding:5vw;
-	padding-top:2vh;
-	padding-bottom:0px;
-}
-#splide3{
-	padding:5vw;
-	padding-top:2vh;
-	padding-bottom:0px;
-}
-
-#splide2{
-
-	padding-top:0px;
-
-}
-#splide4 img{
-	height:15vh;
-	width:auto;
-	object-fit: contain;
-}
-#splide2 img{
-	height:15vh;
-	width:auto;
-	object-fit: contain;
-}
-#splide4{
-
-
-	padding-top:2vh;
-	padding-bottom:0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-.fadein{
-	height:100svh;
-	width:100%;
-	z-index:-5;
-	position:absolute;
-}
-
-.fadein img {
-	
-	min-height:100%;
-	min-width:100%;
-    bottom: 0;
-    margin: auto;
-    overflow: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    object-fit: cover;
-
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 104s;
-}
-
-@-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-@keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
-
-
-
-#f1 {
-
-}
-#f2 {
-    -webkit-animation-delay: -96s;
-
-}
-#f3 {
-    -webkit-animation-delay: -88s;
-
-}
-#f4 {
-    -webkit-animation-delay: -80s;
-}
-#f5 {
-    -webkit-animation-delay: -72s;
-
-}
-#f6 {
-    -webkit-animation-delay: -64s;
-
-}
-#f7 {
-    -webkit-animation-delay: -56s;
-}
-#f8 {
-    -webkit-animation-delay: -48s;
-
-}
-#f9 {
-    -webkit-animation-delay: -40s;
-
-}
-#f10 {
-    -webkit-animation-delay: -32s;
-}
-#f11 {
-    -webkit-animation-delay: -24s;
-
-}
-#f12 {
-    -webkit-animation-delay: -16s;
-
-}
-#f13 {
-    -webkit-animation-delay: -8s;
-
-}
-
-/* Portrait orientation */
-@media screen and (orientation: portrait) {
-
-	#enlargeDiv{
-		overflow: scroll;
-		display: none;
-		position: absolute;
-		
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-		
-		z-index: 1000;
-		height: 80vh;
-		width: 90vw;
-
-	}
-	#enlargeDiv img{	
-		position: absolute;
-		height: 80vh;
-		transition: opacity 500ms;
-		width: auto;
-		max-height: 100%;
-		
-		margin: auto;
-
-}
-
-	#enlargeImg{
-		transition: opacity 500ms;
-
-	}
-}
-/* Landscape orientation */
-@media screen and (orientation: landscape) {
-.fadein{
-	width:100vw;
-	height:100%;
-	z-index:-5;
-	position:absolute;
-}
-
-
-	#enlargeDiv{
-		overflow: scroll;
-		scroll-padding-left: 200em;	
-		display: none;
-		position: absolute;
-		
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-		
-		z-index: 1000;
-		height: 80vh;
-		width: 90vw;
-		scroll-snap-align: center;	
-	}
-	#enlargeDiv img{	
-		position: absolute;
-		height: auto;
-		transition: opacity 500ms;
-		width: 100%;
-		max-height: none;
-		
-		margin: auto;
-
-
-	}
-
-	#enlargeImg{
-		transition: opacity 500ms;
-
-	}
-}
-
-	
-#enlargeDiv::-webkit-scrollbar {
-  display: none;
-}
-
-	
-	
-
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-	}
-  100% {   
-    opacity: 0;
-  }
-  
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }100% {   
-    opacity: 1;
-  }
-  
-}	
-
-
-	
+		body{
+		margin:0;
+		overflow:hidden;
+		}
+
+		img {
+		  display: block;
+		  max-width:auto;
+		  max-height:30svh;
+		  width: auto;
+		}
+
+		.easeload{
+			opacity: 0;
+			-webkit-transition: all 2s ease; 
+			-moz-transition: all 2s ease; 
+			-ms-transition: all 2s ease; 
+			-o-transition: all 2s ease; 
+		}
+
+		#splide{
+			padding:5vw;
+			padding-top:2vh;
+			padding-bottom:0px;
+		}
+		#splide3{
+			padding:5vw;
+			padding-top:2vh;
+			padding-bottom:0px;
+		}
+		#splide2{
+			padding-top:0px;
+		}
+		#splide4 img{
+			height:15vh;
+			width:auto;
+			object-fit: contain;
+		}
+		#splide2 img{
+			height:15vh;
+			width:auto;
+			object-fit: contain;
+		}
+		#splide4{
+			padding-top:2vh;
+			padding-bottom:0px;
+		}
+
+		.fadein{
+			height:100svh;
+			width:100%;
+			z-index:-5;
+			position:absolute;
+		}
+
+		.fadein img {
+			
+			min-height:100%;
+			min-width:100%;
+			bottom: 0;
+			margin: auto;
+			overflow: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+			object-fit: cover;
+
+			-webkit-animation-name: fade;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-duration: 6s;
+			animation-name: fade;
+			animation-iteration-count: infinite;
+			animation-duration: 104s;
+		}
+
+		@-webkit-keyframes fade {
+			0% {opacity: 0;}
+			20% {opacity: 1;}
+			33% {opacity: 1;}
+			53% {opacity: 0;}
+			100% {opacity: 0;}
+		}
+		@keyframes fade {
+			0% {opacity: 0;}
+			20% {opacity: 1;}
+			33% {opacity: 1;}
+			53% {opacity: 0;}
+			100% {opacity: 0;}
+		}
+
+		#f1 {
+
+		}
+		#f2 {
+			-webkit-animation-delay: -96s;
+		}
+		#f3 {
+			-webkit-animation-delay: -88s;
+		}
+		#f4 {
+			-webkit-animation-delay: -80s;
+		}
+		#f5 {
+			-webkit-animation-delay: -72s;
+		}
+		#f6 {
+			-webkit-animation-delay: -64s;
+		}
+		#f7 {
+			-webkit-animation-delay: -56s;
+		}
+		#f8 {
+			-webkit-animation-delay: -48s;
+		}
+		#f9 {
+			-webkit-animation-delay: -40s;
+		}
+		#f10 {
+			-webkit-animation-delay: -32s;
+		}
+		#f11 {
+			-webkit-animation-delay: -24s;
+		}
+		#f12 {
+			-webkit-animation-delay: -16s;
+		}
+		#f13 {
+			-webkit-animation-delay: -8s;
+		}
+
+		/* Portrait orientation */
+		@media screen and (orientation: portrait) {
+
+			#enlargeDiv{
+				overflow: scroll;
+				display: none;
+				position: absolute;
+				
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+				
+				z-index: 1000;
+				height: 80vh;
+				width: 90vw;
+			}
+			#enlargeDiv img{	
+				position: absolute;
+				height: 80vh;
+				transition: opacity 500ms;
+				width: auto;
+				max-height: 100%;
+				
+				margin: auto;
+		}
+
+		#enlargeImg{
+				transition: opacity 500ms;
+			}
+		}
+		/* Landscape orientation */
+		@media screen and (orientation: landscape) {
+			.fadein{
+				width:100vw;
+				height:100%;
+				z-index:-5;
+				position:absolute;
+			}
+			
+			#enlargeDiv{
+				overflow: scroll;
+				scroll-padding-left: 200em;	
+				display: none;
+				position: absolute;
+				
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+				
+				z-index: 1000;
+				height: 80vh;
+				width: 90vw;
+				scroll-snap-align: center;	
+			}
+			
+			#enlargeDiv img{	
+				position: absolute;
+				height: auto;
+				transition: opacity 500ms;
+				width: 100%;
+				max-height: none;	
+				margin: auto;
+			}
+
+			#enlargeImg{
+				transition: opacity 500ms;
+			}
+		}
+
+		#enlargeDiv::-webkit-scrollbar {
+		  display: none;
+		}
+
+		@keyframes fade-out {
+		  0% {
+			opacity: 1;
+			}
+		  100% {   
+			opacity: 0;
+		  }
+		  
+		}
+
+		@keyframes fade-in {
+		  0% {
+			opacity: 0;
+		  }100% {   
+			opacity: 1;
+		  }
+		  
+		}		
 	</style>
 
 	
