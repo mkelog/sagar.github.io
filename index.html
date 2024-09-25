@@ -450,9 +450,15 @@ function openDiv(id)
 	{
 			var widthImg = 0;
 			
+			var basePath = id.split("/").slice(0,-3).join("/")
+			var filename = id.split('/').slice(-2).join("/")
+			console.log(filename);
+			console.log(basePath);
+			
 			document.getElementById('enlargeDiv').style.display="flex";
 			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
-			document.getElementById('enlargeImg').src=id;
+			console.log(basePath+"/SmallMedia/"+filename);
+			document.getElementById('enlargeImg').src=basePath+"/SmallMedia/"+filename;
 			
 			let scrollElement = document.querySelector('#enlargeDiv');
 			scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
@@ -567,8 +573,8 @@ function openDiv(id)
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/2500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/3500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/4500.jpg"/></button></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/LS/5500.jpg"/></button></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/LS/6500.jpg"/></button></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/5500.jpg"/></button></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/6500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/7500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/8500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/9500.jpg"/></button></div></li>
@@ -583,7 +589,7 @@ function openDiv(id)
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/18500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/19500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/20500.jpg"/></button></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/LS/21500.jpg"/></button></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/21500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/22500.jpg"/></button></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/23500.jpg"/></button></div></li>				
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row1/24500.jpg"/></button></div></li>	
@@ -596,12 +602,12 @@ function openDiv(id)
 	<div id="splide3" class="splide" >
 	  <div class="splide__track">
 			<ul class="splide__list">
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/1500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/2500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/3500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/4500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/1500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/2500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/3500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/4500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/5500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/6500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/6500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/7500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/8500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/9500.jpg"/></div></li>
@@ -617,9 +623,9 @@ function openDiv(id)
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/19500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/20500.jpg"/></div></li>
 				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/21500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/22500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/23500.jpg"/></div></li>
-				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/LS/24500.jpg"/></div></li>				
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/22500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/23500.jpg"/></div></li>
+				<li class="splide__slide" style="width:auto;"><div ><img onclick="openDiv(this.src)" class="easeload" onload="this.style.opacity=1" loading="lazy" src="./500px/Row2/24500.jpg"/></div></li>				
 
 			</ul>
 	  </div>
