@@ -455,10 +455,11 @@ function openDiv(id)
 			console.log(filename);
 			console.log(basePath);
 			
-			document.getElementById('enlargeDiv').style.display="flex";
-			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";
+
 			console.log(basePath+"/SmallMedia/"+filename);
 			document.getElementById('enlargeImg').src=basePath+"/SmallMedia/"+filename;
+			document.getElementById('enlargeDiv').style.display="flex";
+			document.getElementById('enlargeImg').style.animation="fade-in 500ms forwards";			
 			
 			let scrollElement = document.querySelector('#enlargeDiv');
 			scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
