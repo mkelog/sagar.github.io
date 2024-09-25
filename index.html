@@ -177,6 +177,9 @@
 				max-height: 100%;
 				
 				margin: auto;
+
+
+				
 		}
 
 		#enlargeImg{
@@ -216,6 +219,7 @@
 				width: 100%;
 				max-height: none;	
 				margin: auto;
+			
 			}
 
 			#enlargeImg{
@@ -249,7 +253,19 @@
 
 	
 	<script>
+var hasTouchScreen = false;
 
+if ("maxTouchPoints" in navigator) {
+    hasTouchScreen = navigator.maxTouchPoints > 0;
+} 
+
+if (hasTouchScreen) {
+    console.log("mobile");
+	
+}else if (hasTouchScreen==false)
+{
+	console.log("desktop");
+}
 	
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide = new Splide( '#splide',  {
@@ -356,13 +372,17 @@ if(divOpened ==1)
 	}
 }
 
+
+
+
 function openDiv(id)
 {
+	if(hasTouchScreen==true){
 	        var orientation,
             img = new Image();
             img.src = id;
 			
-window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+	window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
     const portrait = e.matches;
 
     if (portrait) {
@@ -400,6 +420,32 @@ window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
 
 
 
+
+
+}else if (hasTouchScreen==false){
+	        var orientation,
+            img = new Image();
+            img.src = id;
+			document.getElementById('enlargeImg').style.top="0";
+			document.getElementById('enlargeImg').style.bottom="0";
+			document.getElementById('enlargeImg').style.left="0";
+			document.getElementById('enlargeImg').style.right="0";
+             if (img.naturalWidth > img.naturalHeight) {
+			
+                orientation = 'landscape';
+				document.getElementById('enlargeImg').style.height="auto";
+				document.getElementById('enlargeImg').style.width="100%";
+            } else if (img.naturalWidth < img.naturalHeight) {
+                orientation = 'portrait';
+				document.getElementById('enlargeImg').style.height="100%";
+				document.getElementById('enlargeImg').style.width="auto";				
+            }	
+	
+}
+
+
+
+//reusable
 	if (divOpened == 0)
 	{
 			var widthImg = 0;
@@ -440,7 +486,6 @@ window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
 	}
 
 }
-
 
 
 
