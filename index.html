@@ -248,24 +248,12 @@
 			opacity: 1;
 		  }
 		  
-		}		
+		}			
 	</style>
 
 	
 	<script>
-var hasTouchScreen = false;
 
-if ("maxTouchPoints" in navigator) {
-    hasTouchScreen = navigator.maxTouchPoints > 0;
-} 
-
-if (hasTouchScreen) {
-    console.log("mobile");
-	
-}else if (hasTouchScreen==false)
-{
-	console.log("desktop");
-}
 	
 	  document.addEventListener( 'DOMContentLoaded', function() {
 		var splide = new Splide( '#splide',  {
@@ -345,7 +333,20 @@ if (hasTouchScreen) {
 
 		}).mount(window.splide.Extensions);
 	  } );
+	  
+var hasTouchScreen = false;
 
+if ("maxTouchPoints" in navigator) {
+    hasTouchScreen = navigator.maxTouchPoints > 0;
+} 
+
+if (hasTouchScreen) {
+    console.log("mobile");
+	
+}else if (hasTouchScreen==false)
+{		
+	console.log("desktop");
+}
 var divOpened = 0;
 
 function closeDiv(){
@@ -418,11 +419,11 @@ function openDiv(id)
     }
 });
 
+}
 
 
 
-
-}else if (hasTouchScreen==false){
+if (hasTouchScreen==false){
 	        var orientation,
             img = new Image();
             img.src = id;
