@@ -481,7 +481,7 @@ function openDiv(id)
 	animated.addEventListener('animationend', function(e){
 	
 		if(e.animationName === 'fade-out'){
-		
+				document.getElementById('enlargeImg').src="none";
 		document.getElementById('enlargeDiv').style.display="none";
 		
 		}
